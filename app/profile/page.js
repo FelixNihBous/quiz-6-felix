@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { Avatar, Breadcrumb, Layout, Menu, theme } from 'antd';
 import Link from 'next/link';
 
 const { Header, Content, Footer } = Layout;
@@ -65,10 +65,17 @@ export default function ProfilePage() {
                         minHeight: 280,
                         padding: 24,
                         borderRadius: 16,
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        justifyContent: 'center',
                     }}
                 >
-                    <h1>Profile Page</h1>
-                    <p>This page displays user profile information.</p>
+                    <Avatar size={70}>F</Avatar>
+                    <br></br>
+                    <h2 className="">Name : Felix Tjong</h2>
+                    <p className="">Class : 11 RPL</p>
+                    <p className="">Age : 16</p>
                 </div>
             </Content>
             <Footer
